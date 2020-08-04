@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BMI Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!----google fonts---->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <!---custom css---->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="fibicon.jpg" type="image/x-icon">
+  </head>
+  <body class="">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-header text-center">
+                  <h2 class="card_title">Body Mass Index Calculator(BMI).</h2>
+            </div>
+            <div class="card-body">
+                <form onsubmit="return false">
+                  <div class="form-group">
+                      <label>Your Weight: </label>
+                      <input id="weight" type="number" required class="form-control" placeholder="Enter your weight">
+                    </div>
+                    <div class="form-group">
+                      <label>Your Height: </label>
+                      <input id="height" type="text" required class="form-control" placeholder="Enter your height">
+                    </div>
+                    <div class="form-group">
+                      <label>BMI Value: </label>
+                      <input id="bmiValue" type="text" class="form-control" placeholder="Get your result" disabled>
+                    </div>
+                      <div class="text-center">
+                          <button onclick="getBmi()" type="submit" class="btn btn-success submit_btn" >Check BMI</button>
+                      </div>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                  <p>A healthy BMI ranges between 19 TO 25.</p>
+            </div>
+            <div id="bmi_result">
+                <div class="container d-flex justify-content-center align-items-center text-center">
+                    <div class="box">
+                        <h3 id="innerTextBmi">BMI</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      
+
+
+    <footer class="text-center">
+        <p>Copyright © 2020 sonjoyBarmon. All Rights Reserved</p>
+    </footer>
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

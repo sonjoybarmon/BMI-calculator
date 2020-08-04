@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(180deg,#03a9f48a,#00bcd469 );
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.card{
+    margin: 50px;
+    background: #ffffff;
+    box-shadow: 10px 10px 30px gray;
+    padding: 10px;
+}
+label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.box{
+    background: linear-gradient(180deg, #2196f3e8,#00bcd4f2);
+    width: 600px;
+    padding: 40px 10px;
+    color: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+#bmi_result {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    width: 95%;
+}
+.card{
+    position: relative;
+    border-radius: 15px;
+}
+footer{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+@media(max-width:991px){
+    /* .bmi_result {
+        width: 95%;
+        left:3%;
+    } */
+@media(max-width:767px){
+    .container{
+        width: 96%;
+    }
+    .card {
+        margin: 50px 0px;
+        padding: 0px;
+    }
+    .card_title{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    .card-footer p{
+        font-size: 14px;
+    }
+    /* #bmi_result {
+        width: 95%;
+        left:3%;
+    } */
+}
